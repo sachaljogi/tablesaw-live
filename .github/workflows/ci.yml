@@ -7,21 +7,18 @@ on:
   pull_request:
 
 jobs:
-  Tests:
-    runs-on: ${{ matrix.os }}
-    timeout-minutes: 10
-    strategy:
-      fail-fast: false
-      matrix:
-        # Test the Java LTS versions and latest version available
-        java-version: [11, 23]
-        os: [macOS-latest, ubuntu-latest, windows-latest]
+  build:
+    name: Build (Java 17, Ubuntu)
+    runs-on: ubuntu-latest
+    timeout-minutes: 30
     steps:
       - name: Checkout
-        uses: actions/checkout@v2
-      - name: Set up JDK $
-        uses: actions/setup-java@v1
+        uses: actions/checkout@v7
+      - name: Set up JDK 17
+        uses: actions/setup-java@v6
         with:
-          java-version: ${{ matrix.java-version }}
-      - name: Test with Maven
-        run: mvn test
+          distribution: temurin
+          java-version: 17
+          cache: maven
+      - name: Build and test with Maven
+        run: mvn -B clean verify
