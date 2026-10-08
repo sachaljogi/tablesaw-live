@@ -111,7 +111,7 @@ public class CsvReaderTest {
   }
 
   @Test
-  @Disabled
+  @Disabled("Obsolete since TextColumn was removed (#1119); marked TODO: Remove")
   /** TODO: Remove. Text columns should be used as backing column types */
   void textColumnShutoff() throws IOException {
 

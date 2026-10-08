@@ -24,6 +24,7 @@ import java.time.LocalDateTime;
 import java.time.LocalTime;
 import java.time.ZoneOffset;
 import org.junit.jupiter.api.Test;
+import org.junit.jupiter.api.condition.DisabledOnOs;
 import smile.data.DataFrame;
 import smile.data.formula.Formula;
 import smile.regression.LinearModel;
@@ -41,6 +42,10 @@ import tech.tablesaw.api.StringColumn;
 import tech.tablesaw.api.Table;
 import tech.tablesaw.api.TimeColumn;
 
+@DisabledOnOs(
+    architectures = "aarch64",
+    disabledReason =
+        "smile-mkl 2.6.0 needs Intel MKL natives (bytedeco mkl 2020.3-1.5.4), which have no arm64 build")
 public class SmileConverterTest {
 
   @Test

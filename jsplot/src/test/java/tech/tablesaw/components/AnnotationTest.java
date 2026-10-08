@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import tech.tablesaw.plotly.components.Annotation;
 import tech.tablesaw.plotly.components.Font;
 
-@Disabled
+@Disabled("Prints to stdout only; no assertions")
 public class AnnotationTest {
   @Test
   public void asJavascript() {

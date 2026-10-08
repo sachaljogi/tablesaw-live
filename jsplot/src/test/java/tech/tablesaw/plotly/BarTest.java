@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import tech.tablesaw.plotly.components.Figure;
 import tech.tablesaw.plotly.traces.BarTrace;
 
-@Disabled
+@Disabled("Contains manual examples that write HTML and open a browser via Plot.show")
 public class BarTest {
 
   private final Object[] x = {"sheep", "cows", "fish", "tree sloths"};

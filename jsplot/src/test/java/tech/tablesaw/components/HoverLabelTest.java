@@ -5,7 +5,7 @@ import org.junit.jupiter.api.Test;
 import tech.tablesaw.plotly.components.Font;
 import tech.tablesaw.plotly.components.HoverLabel;
 
-@Disabled
+@Disabled("Prints to stdout only; no assertions")
 public class HoverLabelTest {
 
   @Test

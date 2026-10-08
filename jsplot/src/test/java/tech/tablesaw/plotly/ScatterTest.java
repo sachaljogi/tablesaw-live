@@ -14,7 +14,7 @@ import tech.tablesaw.plotly.components.Symbol;
 import tech.tablesaw.plotly.components.TickSettings;
 import tech.tablesaw.plotly.traces.ScatterTrace;
 
-@Disabled
+@Disabled("Contains manual examples that write HTML and open a browser via Plot.show")
 public class ScatterTest {
 
   private final String[] text = {"acc", "dnax", "lc", "hc", "seq"};
