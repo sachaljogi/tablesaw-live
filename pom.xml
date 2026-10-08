@@ -91,7 +91,7 @@
                     <artifactId>maven-javadoc-plugin</artifactId>
                     <version>3.5.0</version>
                     <configuration>
-                        <source>11</source>
+                        <source>17</source>
                         <detectOfflineLinks>false</detectOfflineLinks>
                         <failOnError>false</failOnError>
                         <quiet>true</quiet>
