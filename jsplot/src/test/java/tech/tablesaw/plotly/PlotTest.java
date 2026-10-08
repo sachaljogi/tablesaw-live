@@ -7,7 +7,7 @@ import java.nio.file.Paths;
 import org.junit.jupiter.api.Disabled;
 import org.junit.jupiter.api.Test;
 
-@Disabled
+@Disabled("Manual example: writes testoutput/myfile.html and opens a browser")
 class PlotTest {
 
   @Test

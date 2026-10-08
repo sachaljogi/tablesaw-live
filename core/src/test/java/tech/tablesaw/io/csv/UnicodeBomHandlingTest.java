@@ -23,7 +23,7 @@ public class UnicodeBomHandlingTest {
   }
 
   @Test
-  @Disabled
+  @Disabled("Depends on the platform default charset; fails on Windows (disabled in #904)")
   public void javaBehaviour() throws IOException {
 
     Table t =

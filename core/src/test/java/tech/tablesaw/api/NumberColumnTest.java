@@ -62,7 +62,7 @@ public class NumberColumnTest {
   private static final DoubleFunction<String> toStringD = d -> String.valueOf(d);
   private static final DoubleBinaryOperator sumD = (d1, d2) -> d1 + d2;
 
-  @Disabled
+  @Disabled("Manual benchmark: sorts 100M random doubles and prints timing; no assertions")
   @Test
   public void testApplyFilter() {
 
@@ -156,7 +156,7 @@ public class NumberColumnTest {
     assertEquals(new DescriptiveStatistics(c.asDoubleArray()).getSkewness(), c.skewness(), 0.00001);
   }
 
-  @Disabled
+  @Disabled("Manual benchmark: fills 1B doubles (~8 GB) and prints timings; no assertions")
   @Test
   public void testSortAndApplyFilter1() {
 
@@ -271,7 +271,7 @@ public class NumberColumnTest {
     assertEquals("52", result.getString(0, "Test"));
   }
 
-  @Disabled
+  @Disabled("Manual benchmark: sorts 100M doubles (1B capacity) and prints timing; no assertions")
   @Test
   public void testSort1() {
     DoubleColumn numberColumn = DoubleColumn.create("test", 1_000_000_000);

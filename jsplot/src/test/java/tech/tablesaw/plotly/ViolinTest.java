@@ -7,7 +7,7 @@ import org.junit.jupiter.api.Test;
 import tech.tablesaw.plotly.components.Figure;
 import tech.tablesaw.plotly.traces.ViolinTrace;
 
-@Disabled
+@Disabled("Contains manual examples that write HTML and open a browser via Plot.show")
 class ViolinTest {
 
   private final Object[] x = {

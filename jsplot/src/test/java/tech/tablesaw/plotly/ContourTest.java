@@ -9,7 +9,7 @@ import tech.tablesaw.plotly.api.ContourPlot;
 import tech.tablesaw.plotly.components.Figure;
 import tech.tablesaw.plotly.traces.ContourTrace;
 
-@Disabled
+@Disabled("Contains manual examples that write HTML and open a browser via Plot.show")
 public class ContourTest {
 
   private final Object[] x = {-9, -6, -5, -3, -1};

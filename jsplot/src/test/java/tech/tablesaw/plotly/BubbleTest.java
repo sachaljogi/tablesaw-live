@@ -20,7 +20,7 @@ import tech.tablesaw.plotly.components.Marker;
 import tech.tablesaw.plotly.components.Symbol;
 import tech.tablesaw.plotly.traces.ScatterTrace;
 
-@Disabled
+@Disabled("Contains manual examples that write HTML and open a browser via Plot.show")
 public class BubbleTest {
 
   private final double[] x = {1, 2, 3, 4, 5, 6};

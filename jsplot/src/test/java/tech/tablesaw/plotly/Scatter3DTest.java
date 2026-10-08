@@ -13,7 +13,7 @@ import tech.tablesaw.plotly.components.Figure;
 import tech.tablesaw.plotly.components.Layout;
 import tech.tablesaw.plotly.traces.Scatter3DTrace;
 
-@Disabled
+@Disabled("Contains manual examples that write HTML and open a browser via Plot.show")
 public class Scatter3DTest {
 
   private final double[] x = {1, 2, 3, 4, 5, 6};
